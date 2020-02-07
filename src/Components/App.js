@@ -1,18 +1,9 @@
 import React, { Component } from 'react';
-import T from 'prop-types';
 import Statistics from './Statistics/Statistics';
 import FeedbackOptions from './FeedbackOptions/FeedbackOptions';
 import Section from './Section/Section';
 
 class App extends Component {
-  static defaultProps = {
-    step: 1,
-  };
-
-  static propTypes = {
-    step: T.number,
-  };
-
   state = {
     good: 0,
     neutral: 0,
@@ -20,10 +11,9 @@ class App extends Component {
   };
 
   handleIncrement = ({ target }) => {
-    const { step } = this.props;
     const name = target.textContent.toLowerCase();
     this.setState(state => ({
-      [name]: state[name] + step,
+      [name]: state[name] + 1,
     }));
   };
 
