@@ -37,7 +37,7 @@ class App extends Component {
 
         <Section title="Statistics">
           {this.total() === 0 ? (
-            <h3>No feedback given</h3>
+            <p>No feedback given</p>
           ) : (
             <Statistics
               good={good}

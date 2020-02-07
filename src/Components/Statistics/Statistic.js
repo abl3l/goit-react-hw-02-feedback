@@ -3,8 +3,10 @@ import T from 'prop-types';
 
 const Statistic = ({ label, value }) => (
   <div>
-    <p>{label}</p>
-    <p>{value}</p>
+    <p>
+      {label}
+      {value}
+    </p>
   </div>
 );
 

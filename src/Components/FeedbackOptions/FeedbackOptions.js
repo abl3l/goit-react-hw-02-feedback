@@ -1,15 +1,16 @@
 import React from 'react';
 import T from 'prop-types';
+import styles from './FeedBackOptions.module.css';
 
 const FeedbackOptions = ({ onClick }) => (
   <div>
-    <button type="button" onClick={onClick}>
+    <button className={styles.button} type="button" onClick={onClick}>
       Good
     </button>
-    <button type="button" onClick={onClick}>
+    <button className={styles.button} type="button" onClick={onClick}>
       Neutral
     </button>
-    <button type="button" onClick={onClick}>
+    <button className={styles.button} type="button" onClick={onClick}>
       Bad
     </button>
   </div>
