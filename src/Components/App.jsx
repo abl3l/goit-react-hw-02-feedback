@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import Statistics from './Statistics/Statistics';
-import FeedbackOptions from './FeedbackOptions/FeedbackOptions';
-import Section from './Section/Section';
+import Statistics from './Statistics/Statistics.jsx';
+import FeedbackOptions from './FeedbackOptions/FeedbackOptions.jsx';
+import Section from './Section/Section.jsx';
 
 class App extends Component {
   state = {

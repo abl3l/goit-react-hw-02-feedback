@@ -1,6 +1,6 @@
 import React from 'react';
 import T from 'prop-types';
-import Statistic from './Statistic';
+import Statistic from './Statistic,jsx';
 
 const Statistics = ({ good, neutral, bad, total, positivePercentage }) => (
   <div>
