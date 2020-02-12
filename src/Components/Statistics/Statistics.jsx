@@ -1,8 +1,14 @@
 import React from 'react';
 import T from 'prop-types';
-import Statistic from './Statistic,jsx';
+import Statistic from './Statistic.jsx';
 
-const Statistics = ({ good, neutral, bad, total, positivePercentage }) => (
+const Statistics = ({
+  good = 0,
+  neutral = 0,
+  bad = 0,
+  total = 0,
+  positivePercentage = '0%',
+}) => (
   <div>
     <Statistic label="Good:" value={good} />
     <Statistic label="Neutral:" value={neutral} />
@@ -11,14 +17,6 @@ const Statistics = ({ good, neutral, bad, total, positivePercentage }) => (
     <Statistic label="Positive feedback :" value={positivePercentage} />
   </div>
 );
-
-Statistics.defaultProps = {
-  good: 0,
-  neutral: 0,
-  bad: 0,
-  total: 0,
-  positivePercentage: '0%',
-};
 
 Statistics.propTypes = {
   good: T.number,

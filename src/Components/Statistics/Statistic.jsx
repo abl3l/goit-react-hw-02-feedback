@@ -1,7 +1,7 @@
 import React from 'react';
 import T from 'prop-types';
 
-const Statistic = ({ label, value }) => (
+const Statistic = ({ label, value = 0 }) => (
   <div>
     <p>
       {label}
@@ -9,10 +9,6 @@ const Statistic = ({ label, value }) => (
     </p>
   </div>
 );
-
-Statistic.defaultProps = {
-  value: 0,
-};
 
 Statistic.propTypes = {
   label: T.string.isRequired,
